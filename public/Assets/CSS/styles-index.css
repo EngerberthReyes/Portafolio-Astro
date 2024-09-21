@@ -19,6 +19,7 @@
 html {
   width: 100%;
   scroll-behavior: smooth;
+  color-scheme: dark;
 }
 
 body {
@@ -31,6 +32,7 @@ body {
   overflow-x: hidden;
   text-align: justify;
   margin: 0;
+  color-scheme: dark;
   height: 100vh;
   text-align: justify;
   background: #fdfdfd;
