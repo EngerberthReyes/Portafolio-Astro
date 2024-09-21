@@ -1,0 +1,373 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+::selection {
+  color: #000000;
+  background: #eeeeee;
+}
+
+body {
+  font-family: "Proxima Nova", System-Ui;
+  background: url("Assets/IMG/Banner-instrucciones/patron.png") center center
+    fixed;
+  color: #eeeeee;
+  position: relative;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.cabecera-container {
+  height: 5rem;
+  background: #170a7f;
+  display: flex;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+  padding: 0 2rem;
+  box-shadow: #000000 0px 0px 13px 0px;
+}
+
+.titulo {
+  font-weight: 400;
+  text-align: center;
+}
+
+.seccion-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 2rem;
+  width: 77rem;
+  border-radius: 20px;
+  background: #000000e3;
+}
+
+.articulo-uno {
+  width: 38rem;
+  border-radius: 20px;
+}
+
+.articulo-dos {
+  padding: 1rem;
+  width: 35rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-display {
+  display: none;
+  font-size: 26px;
+}
+
+.section-none {
+  display: block;
+  font-size: 40px;
+}
+
+.nav__container {
+  width: 90%;
+  margin: 0 auto;
+  height: 70px;
+  display: grid;
+  grid-template-columns: max-content max-content;
+  grid-template-areas: "title img";
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+}
+
+.nav__title {
+  color: #fff;
+  grid-area: title;
+}
+
+.titulo-section {
+  margin: 0.6rem 0;
+}
+
+code {
+  word-break: break-all;
+}
+
+.p-especial {
+  margin: 0.6rem 0;
+}
+
+.nav__icon {
+  width: 30px;
+  display: block;
+}
+
+.dropdown {
+  background-color: #000;
+  padding: 1rem;
+  border-radius: 20px;
+  display: grid;
+  align-content: center;
+  gap: 1rem;
+
+  overflow-y: auto;
+}
+
+.dropdown__list {
+  list-style: none;
+}
+
+.dropdown__link,
+.link_descarga {
+  color: rgb(184, 187, 191);
+  padding: 1em 0.7em;
+  text-decoration: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  position: relative;
+  background-color: var(--bg, transparent);
+  border-radius: 6px;
+}
+
+.link_descarga {
+  margin: 1rem 0;
+  border: 2px solid #eeeeee;
+  justify-content: center;
+}
+
+.dropdown__link:hover {
+  color: #80ffbc;
+  background: #28303b;
+  border-radius: 6px;
+}
+
+.link_descarga:hover {
+  background-color: #270092a6;
+}
+
+.link_descarga:visited {
+  color: #9370db;
+  background-color: #270092a6;
+}
+
+.dropdown__li:hover {
+  border-radius: 6px;
+}
+
+.advertencia-span {
+  background: #4c2919;
+  color: #fe8d59;
+}
+
+.dropdown__list-especial:active {
+  background: #28303b;
+  border-radius: 6px;
+}
+
+.dropdown__check {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.dropdown__arrow {
+  margin-left: auto;
+  transform: var(--rotate, 0);
+  transition: 0.7ms transform;
+}
+
+.arrow_special {
+  transform: rotate(0);
+  transition: transform 500ms ease;
+}
+
+.dropdown__link:active .arrow_special {
+  transform: rotate(90deg);
+}
+
+.dropdown__content {
+  display: grid;
+  grid-template-rows: var(--rows, 0fr);
+  transition: 0.3s grid-template-rows;
+}
+
+.bd-contenedor {
+  margin: 0 0 1rem 0;
+  background: #000000f5;
+  padding: 1rem;
+  border-radius: 20px;
+}
+
+.inform-contenedor {
+  background: #000000f5;
+  padding: 1rem;
+  border-radius: 20px;
+}
+
+.dropdown__sub {
+  overflow: hidden;
+  margin-left: -3rem;
+}
+
+.dropdown__li,
+.li-especial {
+  width: 85%;
+  cursor: pointer;
+  list-style: none;
+  margin-left: auto;
+}
+
+.li_especial {
+  background-color: #28303b;
+  border-radius: 6px;
+}
+
+.dropdown__list:has(:checked) {
+  --rows: 1fr;
+  --rotate: rotate(180deg);
+  --bg: #28303b;
+}
+
+.dropdown__li:hover {
+  background: #28303b !important;
+}
+
+.dropdown__anchor {
+  padding: 1em 1rem;
+  cursor: pointer;
+  margin: 0.5rem 0 0 0;
+  display: block;
+  color: #b6babe;
+  text-decoration: none;
+}
+
+.dropdown__li:hover .dropdown__anchor {
+  color: #87ceeb;
+}
+
+.texto::before {
+  content: url(./assets/down.svg);
+  transform: rotate(90deg);
+  display: inline-block;
+  margin-right: 1rem;
+  transition: transform 4s ease;
+}
+.seccion-centrar {
+  display: flex;
+  margin: 1rem 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  clear: both;
+  margin: 1% 0px 0px 0px;
+  min-width: 100vw;
+  padding: 3rem;
+  height: 4.5rem;
+  box-shadow: #000000 0px 0px 13px 0px;
+  background: #170a7f;
+}
+
+.section-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 1rem;
+}
+
+.contenedor {
+  transition: transform 0.3s ease;
+}
+
+.especial {
+  padding: 1.5rem 2rem;
+  border-radius: 20px;
+  transition: background-color, transform 500ms ease;
+}
+
+.especial:hover {
+  cursor: pointer;
+  transform: scale(1.04);
+  background-color: #28303b;
+}
+
+.centro {
+  background: #34025cb3;
+  padding: 1.5rem 2rem;
+  position: fixed;
+  font-size: 40px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 200;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.especial-mente {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 200;
+}
+
+.imagen-centro {
+  width: 60rem;
+  border-radius: 20px;
+  background: #34025cb3;
+  padding: 1.5rem 2rem;
+  font-size: 40px;
+}
+
+.imagen {
+  border-radius: 20px;
+  width: 100%;
+}
+
+.imagen-instruccion {
+  border-radius: 20px;
+  width: 100%;
+  border: 2px dashed #eeeeee;
+}
+
+@media (width <= 1200px) {
+  body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .seccion-container {
+    width: 28rem;
+    flex-wrap: wrap;
+  }
+
+  .texto::before {
+    transform: rotate(180deg);
+  }
+}

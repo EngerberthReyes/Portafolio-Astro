@@ -1,0 +1,435 @@
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("../Fonts/Proxima Nova.otf") format("opentype");
+}
+
+:root {
+  --bordeLight: #000000;
+  --fondoDark: #0f0f0f;
+  --textoDark: #fdfdfd;
+  --borderDark: #fdfdfd;
+  --outlineDark: #000000;
+}
+
+::selection {
+  background: #2122ded1;
+  color: #eeeeee;
+}
+
+html {
+  width: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  box-sizing: border-box;
+  font-family: "Proxima Nova", "IBM Plex Sans", arial;
+  height: 100vh;
+  color: #000000;
+  overflow-x: hidden;
+  text-align: justify;
+  margin: 0;
+  height: 100vh;
+  text-align: justify;
+  background: #fdfdfd;
+  min-height: 100vh;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.dark-mode {
+  background-color: var(--fondoDark);
+  color: var(--textoDark);
+  border: var(--borderDark);
+  outline: var(--outlineDark);
+}
+
+.light-mode {
+  border: var(--borderLight);
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  position: fixed;
+  column-gap: 1rem;
+  height: auto;
+  z-index: 200;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.titulo-header {
+  position: relative;
+  left: 3%;
+}
+
+.titulo-normal {
+  text-align: center;
+  text-decoration: underline;
+}
+
+.header-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 1rem;
+}
+
+.lista-desordenada {
+  display: flex;
+  list-style: none;
+  justify-content: flex-end;
+  align-items: center;
+  column-gap: 5%;
+  width: 61%;
+  margin: 0 1% 0 0%;
+  padding: 1rem 0;
+  height: 100%;
+}
+
+.imagen-header {
+  width: 2rem;
+}
+
+.container-switch {
+  width: 100px;
+  display: flex;
+  justify-content: flex-end;
+  cursor: pointer;
+  background: #fdfdfd;
+  align-items: center;
+  z-index: 10;
+  list-style: none;
+  text-decoration: none;
+  padding: 5px 8px;
+  color: #000000;
+  border-radius: 20px;
+  box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+  outline: 4px solid #000000;
+  transition: background-color 0.3s ease-in-out,
+    color 400ms cubic-bezier(0.25, 0.1, 0.25, 1), transform 0.3s ease-in-out,
+    opacity 0.3s ease-in-out;
+}
+
+.luna {
+  opacity: 1;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.sol {
+  opacity: 0;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+a {
+  text-decoration: none;
+  font-weight: 700;
+  color: #000000;
+}
+
+a:hover {
+  background: #000000;
+  color: #ffffff;
+  transition: background-color 0.3s ease-in-out,
+    color 200ms cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.titulo-imagen {
+  font-size: 1.5rem;
+  margin: 0 0 1rem 0;
+}
+
+.titulo-seccion__dos {
+  text-align: center;
+  font-size: 34px;
+  margin: 0;
+}
+
+.seccion-principal {
+  width: 100%;
+  margin-top: 5rem;
+}
+
+.seccion-secundaria {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  column-gap: 2%;
+  margin: 0 4.3% 4%;
+}
+
+.articulo-principal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #e4f6b6;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  padding: 2%;
+  border-radius: 20px;
+  transition: background-color 0.3s ease-in-out,
+    color 400ms cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.contenedor-imagen,
+.contenedor-imagen-dos,
+.contenedor-imagen-tres {
+  background: url(../IMG/Banner-instrucciones/facturacion.png) center center
+    fixed;
+  width: 32.4rem;
+  background-size: cover;
+  height: 20rem;
+  border-radius: 20px;
+  position: relative;
+  box-shadow: 0px 0px 17px 0px #000000;
+}
+
+.contenedor-imagen-dos {
+  background: url(../IMG/Banner/Banner-Super-Mario-Bros.png) center center fixed;
+  background-size: cover;
+}
+
+.contenedor-imagen-tres {
+  background: url(../../listado-de-canciones/Assets/IMG/Home/cuarteto.png)
+    center center fixed;
+  background-size: cover;
+}
+
+.contenedor-imagen:hover::after,
+.contenedor-imagen-dos:hover::after,
+.contenedor-imagen-tres:hover::after {
+  content: "Sistema de Facturación";
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  color: #ffffff;
+  background: #000000bf;
+  left: 0;
+  top: 0;
+  font-size: 30px;
+  font-weight: 700;
+  border-radius: 20px;
+}
+
+.contenedor-imagen-dos:hover::after {
+  content: "Super Mario Bros";
+}
+
+.contenedor-imagen-tres:hover::after {
+  content: "El Cuarteto de Nos";
+}
+
+.imagen {
+  width: 33.4rem;
+  border-radius: 20px;
+  box-shadow: 0px 0px 17px 0px #000000;
+}
+
+.articuloimg__tres {
+  width: 510px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 17px 0px #000000;
+}
+
+.articulo-tres__especial {
+  width: 44%;
+  height: 12%;
+  align-self: center;
+}
+
+.articulo-principal__informacion {
+  flex-direction: column;
+  width: 39vw;
+  background: #00ecb6b5;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.articulo-principal:hover,
+.articulo-principal__informacion:hover {
+  transition: background-color 0.3s ease-in-out;
+}
+
+.texto-articulo {
+  font-size: 21px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.seccion-especial {
+  justify-content: center;
+}
+
+.imagen-presentacion {
+  width: 25rem;
+  border-radius: 20px;
+}
+
+.articulo-especial {
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.link_redireccionamiento {
+  width: 8rem;
+  position: relative;
+  text-align: center;
+  justify-content: center;
+  padding: 11px;
+  background: #fdfdfd;
+  border-radius: 20px;
+  box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+  color: #000000;
+  outline: 4px solid #000000;
+}
+
+.flecha {
+  position: fixed;
+  z-index: 200;
+  bottom: 7px;
+  right: 8px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 20px;
+  outline: 2px solid #000000;
+  background: #fdfdfd;
+  transition: opacity 500ms 500ms ease-in-out, transform 500ms 500ms ease-in-out;
+}
+
+.flechaUp-svg {
+  transform: rotate(-90deg);
+  width: 50px;
+}
+
+.pie-pagina {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  width: 100%;
+  box-shadow: #c32525d9 0px 0px 13px 0px;
+  background: #df4d4d;
+}
+
+.texto-pie-pagina {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 900;
+  margin: 0;
+}
+
+.img_cuarteto {
+  width: 25rem;
+}
+
+article > .link_redireccionamiento {
+  width: 35vw;
+}
+
+.articulo-hover {
+  transform: scale(1);
+  transition: transform 500ms 0.5ms cubic-bezier(0.22, 0.61, 0.36, 1),
+    background-color 0.3s ease-in-out;
+}
+
+.link-contenedor {
+  all: unset;
+  text-align: center;
+}
+
+.link-contenedor:hover {
+  all: unset;
+  text-align: center;
+}
+
+.articulo-hover:hover {
+  z-index: 100;
+  cursor: pointer;
+  transform: scale(1.1) rotate(5deg);
+  transition: transform 500ms 0.5ms cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.section-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 1rem;
+  justify-content: center;
+  height: 5rem;
+}
+
+@media (width <= 1250px) {
+  .header-container {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .articulo-principal__informacion {
+    width: 100vw;
+  }
+
+  .contenedor-imagen,
+  .contenedor-imagen-dos,
+  .contenedor-imagen-tres {
+    width: 26rem;
+  }
+
+  .articulo-principal {
+    width: 100vw;
+    padding: 2rem 0;
+  }
+
+  .imagen {
+    width: 23rem;
+  }
+
+  .articulo-especial {
+    row-gap: 4rem;
+    flex-wrap: wrap;
+  }
+
+  .titulo-normal {
+    position: relative;
+    top: 1.5rem;
+  }
+
+  .seccion-secundaria {
+    display: flex;
+    row-gap: 1rem;
+  }
+
+  article > .link_redireccionamiento {
+    width: auto;
+    margin: 1rem;
+  }
+
+  .link_redireccionamiento {
+    width: 9rem;
+    word-break: break-all;
+  }
+
+  .titulo-seccion__dos {
+    font-size: 20px;
+  }
+
+  .flecha {
+    width: 4rem;
+  }
+}
