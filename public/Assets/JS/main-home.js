@@ -24,14 +24,13 @@ header.style.backgroundColor = "#0f0f0f";
 articuloPrincipal.forEach((elemento) => {
   elemento.style.backgroundColor = "#000000";
   elemento.style.color = "#ffffff";
-  elemento.style.outline = "4px solid #ffffff";
   elemento.style.borderRadius = "20px";
 });
 
 articuloPrincipalDos.forEach((elemento) => {
   elemento.style.backgroundColor = "#000000";
   elemento.style.color = "#ffffff";
-  elemento.style.outline = "4px solid #ffffff";
+
   elemento.style.borderRadius = "20px";
 });
 
@@ -97,13 +96,13 @@ containerBtn.addEventListener("click", () => {
     articuloPrincipal.forEach((elemento) => {
       elemento.style.boxShadow = "0 0 10px rgba(0, 0, 0, 0.2)";
       elemento.style.borderRadius = "20px";
-      elemento.style.backgroundColor = "#00ecb6b5";
+      elemento.style.backgroundColor = "#ffdda88a";
       elemento.style.color = "#000000";
       elemento.style.outline = "none";
     });
 
     articuloPrincipalDos.forEach((elemento) => {
-      elemento.style.backgroundColor = "#00ecb6b5";
+      elemento.style.backgroundColor = "#ffdda88a";
       elemento.style.color = "#000000";
       elemento.style.boxShadow = "0 0 10px rgba(0, 0, 0, 0.2)";
       elemento.style.borderRadius = "20px";
@@ -136,14 +135,14 @@ containerBtn.addEventListener("click", () => {
     articuloPrincipal.forEach((elemento) => {
       elemento.style.backgroundColor = "#000000";
       elemento.style.color = "#ffffff";
-      elemento.style.outline = "4px solid #ffffff";
+
       elemento.style.borderRadius = "20px";
     });
 
     articuloPrincipalDos.forEach((elemento) => {
       elemento.style.backgroundColor = "#000000";
       elemento.style.color = "#ffffff";
-      elemento.style.outline = "4px solid #ffffff";
+
       elemento.style.borderRadius = "20px";
     });
 
