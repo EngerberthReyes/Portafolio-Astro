@@ -11,9 +11,18 @@
   --outlineDark: #000000;
 }
 
-::selection {
-  background: #2122ded1;
-  color: #eeeeee;
+body.dark-mode {
+  ::selection {
+    background-color: #eeeeee;
+    color: #0f0f0f;
+  }
+}
+
+body.light-mode {
+  ::selection {
+    background-color: #0f0f0f;
+    color: #eeeeee;
+  }
 }
 
 html {
