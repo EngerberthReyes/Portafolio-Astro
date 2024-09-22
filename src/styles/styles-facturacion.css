@@ -296,7 +296,9 @@ code {
 .especial {
   padding: 1.5rem 2rem;
   border-radius: 20px;
-  transition: background-color, transform 500ms ease;
+  transition:
+    background-color,
+    transform 500ms ease;
 }
 
 .especial:hover {

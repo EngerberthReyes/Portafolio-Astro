@@ -1,6 +1,7 @@
 @font-face {
   font-family: "Proxima Nova", "IBM Plex Sans";
-  src: url("../Fonts/IBMPlexSans-Regular.ttf") format("truetydpe"),
+  src:
+    url("../Fonts/IBMPlexSans-Regular.ttf") format("truetydpe"),
     url("../Fonts/Proxima Nova.otf") format("opentype");
 }
 
@@ -51,8 +52,10 @@ body {
   padding: 3rem;
   row-gap: 1rem;
   display: flex;
-  box-shadow: 0 0.1rem 0.15rem rgba(40, 36, 89, 0.15),
-    0 0.5rem 1rem rgba(40, 36, 89, 0.15), 0 2rem 4rem rgba(40, 36, 89, 0.25);
+  box-shadow:
+    0 0.1rem 0.15rem rgba(40, 36, 89, 0.15),
+    0 0.5rem 1rem rgba(40, 36, 89, 0.15),
+    0 2rem 4rem rgba(40, 36, 89, 0.25);
   justify-content: center;
   align-items: center;
   flex-direction: column;

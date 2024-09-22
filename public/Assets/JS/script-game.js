@@ -61,7 +61,7 @@ class Character {
       this.position.x,
       this.position.y,
       60,
-      60
+      60,
     );
   }
 }
@@ -99,7 +99,7 @@ class Coin {
       this.position.x,
       this.position.y,
       100,
-      40
+      40,
     );
   }
 }
@@ -123,7 +123,7 @@ class end {
       this.position.x,
       this.position.y,
       100,
-      40
+      40,
     );
   }
 }
@@ -145,7 +145,7 @@ class Enemy {
       this.position.x,
       this.position.y,
       50,
-      50
+      50,
     );
     this.position.x += this.velocity.x;
     this.position.y += this.velocity.y;
@@ -253,8 +253,8 @@ function genenemy() {
     new Enemy(
       Math.floor(Math.random() * (gamespace.width - object.position.x)) +
         object.position.x +
-        60
-    )
+        60,
+    ),
   );
 }
 setInterval(genenemy, 5000);
@@ -531,7 +531,7 @@ timer.innerText = inittime;
 
 function updatetimer() {
   inittime--;
-  inittime = (inittime < 10) ? "0" + inittime : inittime;
+  inittime = inittime < 10 ? "0" + inittime : inittime;
   timer.innerText = inittime;
   if (inittime == 0) {
     clearInterval(updatetime);
@@ -572,13 +572,10 @@ function gameoverscreen(gameover) {
   audbut.innerText = "Encender Musica";
 }
 
+botonParaSalir = document.getElementById("btn-salirPagina");
 
-botonParaSalir = document.getElementById('btn-salirPagina');
-
-botonParaSalir.addEventListener('click', () => {
-
-  window.open('home.html', '_blank');
+botonParaSalir.addEventListener("click", () => {
+  window.open("home.html", "_blank");
 
   window.close();
-
 });

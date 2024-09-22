@@ -1,373 +1,375 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import '../styles/styles-facturacion.css';
-import Card from '../components/Card.astro';
+import Layout from "../layouts/Layout.astro";
+import "../styles/styles-facturacion.css";
+import Card from "../components/Card.astro";
 ---
 
-<Layout title="Welcome to Barranca Abajo.", icono="/Barranca Abajo.jpg", estilosUrl="/Assets/CSS/styles-intrucciones-facturacion.css">
-    <link rel='stylesheet' type='text/css' href='animate.min.css' />
-    <link rel="stylesheet" type="text/css" href="boxicons.min.css" />
-    <header class="cabecera-container">
-        <h1 class="titulo">
-          Instrucciones Para Acceder al Sistema de Facturación
-        </h1>
-      </header>
-      <section class="seccion-centrar">
-        <section class="seccion-container">
-          <article class="articulo-uno">
-            <nav class="nav">
-              <ul class="dropdown" id="menu">
-                <li class="dropdown__list">
-                  <p class="dropdown__link">
-                    <img src="/Assets/projects.svg" class="dropdown__icon" />
-                    <input type="checkbox" class="dropdown__check" />
-                    <span class="dropdown__span"
-                      >Primer Paso / Clonar el Sistema de Facturación Usando Git</span
-                    >
-                    <img src="/Assets/down.svg" class="dropdown__arrow" />
-                  </p>
-                  <section class="dropdown__content">
-                    <ul class="dropdown__sub">
-                      <li class="dropdown__li li_especial">
-                        <p class="dropdown__anchor">Descargar e Instalar Git</p>
-                      </li>
-                      <li class="dropdown__li li_especial">
-                        <p class="dropdown__anchor">
-                          Clonar el Proyecto Alojado en Github
-                        </p>
-                      </li>
-                    </ul>
-                  </section>
-                </li>
-                <li class="dropdown__list">
-                  <p class="dropdown__link">
-                    <img src="/Assets/projects.svg" class="dropdown__icon" />
-                    <span class="dropdown__span">Segundo Paso / Node.js</span>
-                    <img src="/Assets/down.svg" class="dropdown__arrow" />
-                    <input type="checkbox" class="dropdown__check" />
-                  </p>
-                  <section class="dropdown__content">
-                    <ul class="dropdown__sub">
-                      <li class="dropdown__li li_especial">
-                        <p class="dropdown__anchor">Instalar Node.js</p>
-                      </li>
-                      <li class="dropdown__li li_especial">
-                        <p class="dropdown__anchor">
-                          Instalar las Dependencias del Proyecto / NPM
-                        </p>
-                      </li>
-                    </ul>
-                  </section>
-                </li>
-                <li class="dropdown__list">
-                  <p class="dropdown__link">
-                    <img src="/Assets/projects.svg" class="dropdown__icon" />
-                    <span class="dropdown__span"
-                      >Tercer Paso / Base de Datos e Inicio del Servidor</span
-                    >
-                    <img src="/Assets/down.svg" class="dropdown__arrow" />
-                    <input type="checkbox" class="dropdown__check" />
-                  </p>
-                  <section class="dropdown__content">
-                    <ul class="dropdown__sub">
-                                          <li class="dropdown__li li_especial">
-                        <p class="dropdown__anchor">
-                          Descargar Base de Datos [PostgreSQL]
-                        </p>
-                      </li>
-                                    <li class="dropdown__list">
-                  <a
-                    class="dropdown__li li_especial dropdown__link link_descarga"
-                    href="Sistema_de_Facturacion.rar"
-                    download="Sistema de Facturacion - Base de Datos.rar"
-                  >
-                    <i class='bx'>
-                        <img src="assets/IMG/Home/bxs-download.png" />
-                    </i>
-                    <span class="dropdown__span"
-                      >Descargar la Base del Sistema de Facturación [PostgreSQL]</span
-                    >
-                    <img
-                      src="/Assets/down.svg"
-                      class="dropdown__arrow arrow_special"
-                    />
-                  </a>
-                </li>
-                      <li class="dropdown__li li_especial">
-                        <p class="dropdown__anchor">
-                          Restauración de la Base de Datos
-                        </p>
-                      </li>
-                      <li class="dropdown__li li_especial">
-                        <p class="dropdown__anchor">
-                          Ejecutar Servidor e Interfaz en el Navegador
-                        </p>
-                      </li>
-                    </ul>
-                  </section>
-                </li>
-                <li class="dropdown__list">
-                  <p class="dropdown__link">
-                    <img src="/Assets/projects.svg" class="dropdown__icon" />
-                    <span class="dropdown__span"
-                      >Interfaces del Sistema de Facturación</span
-                    >
-                    <img src="/Assets/down.svg" class="dropdown__arrow" />
-                    <input type="checkbox" class="dropdown__check" />
-                  </p>
-                  <section class="dropdown__content">
-                    <ul class="dropdown__sub">
-                      <li class="dropdown__li li_especial">
-                        <p class="dropdown__anchor">Inicio de Usuario</p>
-                      </li>
-                      <li class="dropdown__li li_especial">
-                        <p class="dropdown__anchor">Cliente Registrado</p>
-                      </li>
-                      <li class="dropdown__li li_especial">
-                        <p class="dropdown__anchor">Registro de Cliente</p>
-                      </li>
-                      <li class="dropdown__li li_especial">
-                        <p class="dropdown__anchor">Facturación</p>
-                      </li>
-                      <li class="dropdown__li li_especial">
-                        <p class="dropdown__anchor">Factura</p>
-                      </li>
-                    </ul>
-                  </section>
-                </li>
-                <li class="dropdown__list dropdown__list-especial">
-                  <a class="dropdown__link" href="index.html">
-                    <img src="/Assets/exit.png" class="dropdown__icon" />
-                    <span class="dropdown__span"
-                      >Regresar a la Pagina Anterior</span
-                    >
-                  </a>
-                </li>
-              </ul>
-            </nav>
-          </article>
-          <article class="articulo-dos">
-            <section class="section-none">
-              <h1 class="texto">Instrucciones</h1>
-            </section>
-            <section class="section-display">
-              <section class="inform-contenedor">
-                <h2 class="titulo-section">Descargue e Instale Git</h2>
-                <p class="p-especial">
-                  Haga clic en el siguiente enlace:
-                  <a
-                    class="link_descarga"
-                    href="https://git-scm.com/download"
-                    target="_blank"
-                  >
-                    Descargar Git
-                  </a>
-                </p>
-              </section>
-            </section>
-            <section class="section-display">
-              <section class="inform-contenedor">
-                <h2 class="titulo-section">Clonar el Proyecto de Github</h2>
-                <p class="p-especial">
-                  Para clonar mi Proyecto alojado en Github debe en su consola de
-                  Git Bash estando dentro de la carpeta debe escribir la Consola de Git Bash:
-                </p>
-                <code
-                  >git clone
-                  https://github.com/EngerberthReyes/Proyecto_ALP-365.git</code
+<Layout
+  title="Instrucciones Para El Sistema de Facturación"
+  ,
+  icono="/Barranca Abajo.jpg"
+  ,
+  estilosUrl="/Assets/CSS/styles-intrucciones-facturacion.css"
+>
+  <link rel="stylesheet" type="text/css" href="animate.min.css" />
+  <link rel="stylesheet" type="text/css" href="boxicons.min.css" />
+  <header class="cabecera-container">
+    <h1 class="titulo">Instrucciones Para Acceder al Sistema de Facturación</h1>
+  </header>
+  <section class="seccion-centrar">
+    <section class="seccion-container">
+      <article class="articulo-uno">
+        <nav class="nav">
+          <ul class="dropdown" id="menu">
+            <li class="dropdown__list">
+              <p class="dropdown__link">
+                <img src="/Assets/projects.svg" class="dropdown__icon" />
+                <input type="checkbox" class="dropdown__check" />
+                <span class="dropdown__span"
+                  >Primer Paso / Clonar el Sistema de Facturación Usando Git</span
                 >
+                <img src="/Assets/down.svg" class="dropdown__arrow" />
+              </p>
+              <section class="dropdown__content">
+                <ul class="dropdown__sub">
+                  <li class="dropdown__li li_especial">
+                    <p class="dropdown__anchor">Descargar e Instalar Git</p>
+                  </li>
+                  <li class="dropdown__li li_especial">
+                    <p class="dropdown__anchor">
+                      Clonar el Proyecto Alojado en Github
+                    </p>
+                  </li>
+                </ul>
               </section>
-            </section>
-            <section class="section-display">
-              <section class="inform-contenedor">
-                <h2 class="titulo-section">Descargue e Instale Node.js</h2>
-                <p class="p-especial">
-                  Para descargar Node.js, Haga clic en el siguiente enlace:
-                  <a
-                    class="link_descarga"
-                    href="https://nodejs.org/en/download/"
-                    target="_blank"
-                  >
-                    Descargar Node.js
-                  </a>
-                  Y seleccione la opción más conveniente para su sistema
-                  operativo.
-                </p>
+            </li>
+            <li class="dropdown__list">
+              <p class="dropdown__link">
+                <img src="/Assets/projects.svg" class="dropdown__icon" />
+                <span class="dropdown__span">Segundo Paso / Node.js</span>
+                <img src="/Assets/down.svg" class="dropdown__arrow" />
+                <input type="checkbox" class="dropdown__check" />
+              </p>
+              <section class="dropdown__content">
+                <ul class="dropdown__sub">
+                  <li class="dropdown__li li_especial">
+                    <p class="dropdown__anchor">Instalar Node.js</p>
+                  </li>
+                  <li class="dropdown__li li_especial">
+                    <p class="dropdown__anchor">
+                      Instalar las Dependencias del Proyecto / NPM
+                    </p>
+                  </li>
+                </ul>
               </section>
-            </section>
-            <section class="section-display">
-              <section class="inform-contenedor">
-                <h2 class="titulo-section">
-                  Instalar Las Dependencias Necesarias Para el Proyecto
-                </h2>
-                <p class="p-especial">
-                  Para instalarlas, introduzca en su consola de Git Bash:
-                </p>
-                <code>npm install</code>
-                <p class="p-especial">
-                  Esto dentro de la carpeta "nextjs"
-                </p>
-                 <span class="advertencia-span">No actualice la versión traída de base por el proyecto, la versión de base en el proyecto es (véase en el package.json): next: 13.5.5</span>
+            </li>
+            <li class="dropdown__list">
+              <p class="dropdown__link">
+                <img src="/Assets/projects.svg" class="dropdown__icon" />
+                <span class="dropdown__span"
+                  >Tercer Paso / Base de Datos e Inicio del Servidor</span
+                >
+                <img src="/Assets/down.svg" class="dropdown__arrow" />
+                <input type="checkbox" class="dropdown__check" />
+              </p>
+              <section class="dropdown__content">
+                <ul class="dropdown__sub">
+                  <li class="dropdown__li li_especial">
+                    <p class="dropdown__anchor">
+                      Descargar Base de Datos [PostgreSQL]
+                    </p>
+                  </li>
+                  <li class="dropdown__list">
+                    <a
+                      class="dropdown__li li_especial dropdown__link link_descarga"
+                      href="Sistema_de_Facturacion.rar"
+                      download="Sistema de Facturacion - Base de Datos.rar"
+                    >
+                      <i class="bx">
+                        <img src="assets/IMG/Home/bxs-download.png" />
+                      </i>
+                      <span class="dropdown__span"
+                        >Descargar la Base del Sistema de Facturación
+                        [PostgreSQL]</span
+                      >
+                      <img
+                        src="/Assets/down.svg"
+                        class="dropdown__arrow arrow_special"
+                      />
+                    </a>
+                  </li>
+                  <li class="dropdown__li li_especial">
+                    <p class="dropdown__anchor">
+                      Restauración de la Base de Datos
+                    </p>
+                  </li>
+                  <li class="dropdown__li li_especial">
+                    <p class="dropdown__anchor">
+                      Ejecutar Servidor e Interfaz en el Navegador
+                    </p>
+                  </li>
+                </ul>
               </section>
-            </section>
-             <section class="section-display">
-              <section class="inform-contenedor">
-                <h2 class="titulo-section">Descargue e Instale PostgreSQL</h2>
-                <p class="p-especial">
-                  Haga clic en el siguiente enlace:
-                  <a
-                    class="link_descarga"
-                    href="https://www.enterprisedb.com/downloads/postgres-postgresql-downloads"
-                    target="_blank"
-                  >
-                    Descargar PostgreSQL
-                  </a>
-                </p>
-                <h2 class="titulo-section">Descargue e Instale PgAdmin</h2>
-                <p class="p-especial">
-                  Si PostgreSQL, por alguna razon no trae PgAdmin, Haga clic en el siguiente enlace:
-                  <a
-                    class="link_descarga"
-                    href="https://www.postgresql.org/ftp/pgadmin/pgadmin4/"
-                    target="_blank"
-                  >
-                    Descargar PgAdmin
-                  </a>
-                  y seleccione la ultima versión
-                </p>
+            </li>
+            <li class="dropdown__list">
+              <p class="dropdown__link">
+                <img src="/Assets/projects.svg" class="dropdown__icon" />
+                <span class="dropdown__span"
+                  >Interfaces del Sistema de Facturación</span
+                >
+                <img src="/Assets/down.svg" class="dropdown__arrow" />
+                <input type="checkbox" class="dropdown__check" />
+              </p>
+              <section class="dropdown__content">
+                <ul class="dropdown__sub">
+                  <li class="dropdown__li li_especial">
+                    <p class="dropdown__anchor">Inicio de Usuario</p>
+                  </li>
+                  <li class="dropdown__li li_especial">
+                    <p class="dropdown__anchor">Cliente Registrado</p>
+                  </li>
+                  <li class="dropdown__li li_especial">
+                    <p class="dropdown__anchor">Registro de Cliente</p>
+                  </li>
+                  <li class="dropdown__li li_especial">
+                    <p class="dropdown__anchor">Facturación</p>
+                  </li>
+                  <li class="dropdown__li li_especial">
+                    <p class="dropdown__anchor">Factura</p>
+                  </li>
+                </ul>
               </section>
-            </section>
-            <section class="section-display">
-              <section class="bd-contenedor">
-                <h2 class="titulo-section">Base de Datos</h2>
-                <p class="p-especial">
-                  Deberá Iniciar PgAdmin y Crear una Base de Datos, la cual deberá
-                  llamarse:
-                </p>
-                <code>sistemadefacturacionalp_2</code>
-                <p class="p-especial">
-                  luego, deberá con el archivo que descargo respaldarlo en esa base de
-                  datos que acaba de crear
-                </p>
-                <section class="especial">
-                  <section class="contenedor animate__animated">
-                    <p class="p-especial">Paso 1</p>
-                    <img
-                      class="imagen"
-                      src="Assets/IMG/Banner-instrucciones/restaurar_1.png"
-                      alt="restaurar_1.png"
-                    />
-                  </section>
-                </section>
-                <section class="especial">
-                  <section class="contenedor animate__animated">
-                    <p class="p-especial">Paso 2</p>
-                    <img
-                      class="imagen"
-                      src="Assets/IMG/Banner-instrucciones/restaurar_2.png"
-                      alt="restaurar_2.png"
-                    />
-                  </section>
-                </section>
-              </section>
-            </section>
-            <section class="section-display">
-              <section class="inform-contenedor">
-                <h2 class="titulo-section">Inicie El Sistema de Facturación</h2>
-                <p class="p-especial">
-                  Usando el comando en su consola de Git Bash dentro de la carpeta
-                  "nextjs"
-                </p>
-                <code>npm run dev</code>
-                <p class="p-especial">
-                  Luego de iniciado el Servidor, ingrese a:
-                </p>
-                <code>http://localhost:3000</code>
-                <p class="p-especial">
-                  Usando la Barra de Direcciones de su Navegador
-                </p>
-              </section>
-            </section>
-                               <section class="section-display">
-              <section class="inform-contenedor">
-                <section class="especial">
-                  <section class="contenedor animate__animated">
-                    <h2 class="titulo-section">Inicio de Usuario</h2>
-                    <img
-                      class="imagen"
-                      src="Assets/IMG/Banner-instrucciones/inicio_de_usuario.png"
-                      alt="inicio_de_usuario.png"
-                    />
-                  </section>
-                </section>
-              </section>
-            </section>
-            <section class="section-display">
-              <section class="inform-contenedor">
-                <section class="especial">
-                  <section class="contenedor animate__animated">
-                    <h2 class="titulo-section">Cliente Registrado</h2>
-                    <img
-                      class="imagen"
-                      src="Assets/IMG/Banner-instrucciones/ingresar_cliente.png"
-                      alt="ingresar_cliente.png"
-                    />
-                  </section>
-                </section>
-              </section>
-            </section>
-            <section class="section-display">
-              <section class="inform-contenedor">
-                <section class="especial">
-                  <section class="contenedor animate__animated">
-                    <h2 class="titulo-section">Registro de Cliente</h2>
-                    <img
-                      class="imagen"
-                      src="Assets/IMG/Banner-instrucciones/registro_cliente.png"
-                      alt="registro_cliente.png"
-                    />
-                  </section>
-                </section>
-              </section>
-            </section>
-                      <section class="section-display">
-              <section class="inform-contenedor">
-                <section class="especial">
-                  <section class="contenedor animate__animated">
-                    <h2 class="titulo-section">Facturación</h2>
-                    <img
-                      class="imagen"
-                      src="Assets/IMG/Banner-instrucciones/facturacion.png"
-                      alt="facturacion.png"
-                    />
-                  </section>
-                </section>
-              </section>
-            </section>
-                      <section class="section-display">
-              <section class="inform-contenedor">
-                <section class="especial">
-                  <section class="contenedor animate__animated">
-                    <h2 class="titulo-section">Factura</h2>
-                    <img
-                      class="imagen"
-                      src="Assets/IMG/Banner-instrucciones/factura.png"
-                      alt="factura.png"
-                    />
-                  </section>
-                </section>
-              </section>
-            </section>
-          </article>
+            </li>
+            <li class="dropdown__list dropdown__list-especial">
+              <a class="dropdown__link" href="/">
+                <img src="/Assets/exit.png" class="dropdown__icon" />
+                <span class="dropdown__span">Regresar a la Pagina Anterior</span
+                >
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </article>
+      <article class="articulo-dos">
+        <section class="section-none">
+          <h1 class="texto">Instrucciones</h1>
         </section>
-      </section>
-      <footer class="footer">
-        <section class="section-footer">
-          <h1 class="titulo">
-            Instrucciones Sistema de Facturación / 2024
-          </h1>
-          <i>Aqui Van Iconos</i>
+        <section class="section-display">
+          <section class="inform-contenedor">
+            <h2 class="titulo-section">Descargue e Instale Git</h2>
+            <p class="p-especial">
+              Haga clic en el siguiente enlace:
+              <a
+                class="link_descarga"
+                href="https://git-scm.com/download"
+                target="_blank"
+              >
+                Descargar Git
+              </a>
+            </p>
+          </section>
         </section>
-      </footer>
+        <section class="section-display">
+          <section class="inform-contenedor">
+            <h2 class="titulo-section">Clonar el Proyecto de Github</h2>
+            <p class="p-especial">
+              Para clonar mi Proyecto alojado en Github debe en su consola de
+              Git Bash estando dentro de la carpeta debe escribir la Consola de
+              Git Bash:
+            </p>
+            <code
+              >git clone https://github.com/EngerberthReyes/Proyecto_ALP-365.git</code
+            >
+          </section>
+        </section>
+        <section class="section-display">
+          <section class="inform-contenedor">
+            <h2 class="titulo-section">Descargue e Instale Node.js</h2>
+            <p class="p-especial">
+              Para descargar Node.js, Haga clic en el siguiente enlace:
+              <a
+                class="link_descarga"
+                href="https://nodejs.org/en/download/"
+                target="_blank"
+              >
+                Descargar Node.js
+              </a>
+              Y seleccione la opción más conveniente para su sistema operativo.
+            </p>
+          </section>
+        </section>
+        <section class="section-display">
+          <section class="inform-contenedor">
+            <h2 class="titulo-section">
+              Instalar Las Dependencias Necesarias Para el Proyecto
+            </h2>
+            <p class="p-especial">
+              Para instalarlas, introduzca en su consola de Git Bash:
+            </p>
+            <code>npm install</code>
+            <p class="p-especial">Esto dentro de la carpeta "nextjs"</p>
+            <span class="advertencia-span"
+              >No actualice la versión traída de base por el proyecto, la
+              versión de base en el proyecto es (véase en el package.json):
+              next: 13.5.5</span
+            >
+          </section>
+        </section>
+        <section class="section-display">
+          <section class="inform-contenedor">
+            <h2 class="titulo-section">Descargue e Instale PostgreSQL</h2>
+            <p class="p-especial">
+              Haga clic en el siguiente enlace:
+              <a
+                class="link_descarga"
+                href="https://www.enterprisedb.com/downloads/postgres-postgresql-downloads"
+                target="_blank"
+              >
+                Descargar PostgreSQL
+              </a>
+            </p>
+            <h2 class="titulo-section">Descargue e Instale PgAdmin</h2>
+            <p class="p-especial">
+              Si PostgreSQL, por alguna razon no trae PgAdmin, Haga clic en el
+              siguiente enlace:
+              <a
+                class="link_descarga"
+                href="https://www.postgresql.org/ftp/pgadmin/pgadmin4/"
+                target="_blank"
+              >
+                Descargar PgAdmin
+              </a>
+              y seleccione la ultima versión
+            </p>
+          </section>
+        </section>
+        <section class="section-display">
+          <section class="bd-contenedor">
+            <h2 class="titulo-section">Base de Datos</h2>
+            <p class="p-especial">
+              Deberá Iniciar PgAdmin y Crear una Base de Datos, la cual deberá
+              llamarse:
+            </p>
+            <code>sistemadefacturacionalp_2</code>
+            <p class="p-especial">
+              luego, deberá con el archivo que descargo respaldarlo en esa base
+              de datos que acaba de crear
+            </p>
+            <section class="especial">
+              <section class="contenedor animate__animated">
+                <p class="p-especial">Paso 1</p>
+                <img
+                  class="imagen"
+                  src="Assets/IMG/Banner-instrucciones/restaurar_1.png"
+                  alt="restaurar_1.png"
+                />
+              </section>
+            </section>
+            <section class="especial">
+              <section class="contenedor animate__animated">
+                <p class="p-especial">Paso 2</p>
+                <img
+                  class="imagen"
+                  src="Assets/IMG/Banner-instrucciones/restaurar_2.png"
+                  alt="restaurar_2.png"
+                />
+              </section>
+            </section>
+          </section>
+        </section>
+        <section class="section-display">
+          <section class="inform-contenedor">
+            <h2 class="titulo-section">Inicie El Sistema de Facturación</h2>
+            <p class="p-especial">
+              Usando el comando en su consola de Git Bash dentro de la carpeta
+              "nextjs"
+            </p>
+            <code>npm run dev</code>
+            <p class="p-especial">Luego de iniciado el Servidor, ingrese a:</p>
+            <code>http://localhost:3000</code>
+            <p class="p-especial">
+              Usando la Barra de Direcciones de su Navegador
+            </p>
+          </section>
+        </section>
+        <section class="section-display">
+          <section class="inform-contenedor">
+            <section class="especial">
+              <section class="contenedor animate__animated">
+                <h2 class="titulo-section">Inicio de Usuario</h2>
+                <img
+                  class="imagen"
+                  src="Assets/IMG/Banner-instrucciones/inicio_de_usuario.png"
+                  alt="inicio_de_usuario.png"
+                />
+              </section>
+            </section>
+          </section>
+        </section>
+        <section class="section-display">
+          <section class="inform-contenedor">
+            <section class="especial">
+              <section class="contenedor animate__animated">
+                <h2 class="titulo-section">Cliente Registrado</h2>
+                <img
+                  class="imagen"
+                  src="Assets/IMG/Banner-instrucciones/ingresar_cliente.png"
+                  alt="ingresar_cliente.png"
+                />
+              </section>
+            </section>
+          </section>
+        </section>
+        <section class="section-display">
+          <section class="inform-contenedor">
+            <section class="especial">
+              <section class="contenedor animate__animated">
+                <h2 class="titulo-section">Registro de Cliente</h2>
+                <img
+                  class="imagen"
+                  src="Assets/IMG/Banner-instrucciones/registro_cliente.png"
+                  alt="registro_cliente.png"
+                />
+              </section>
+            </section>
+          </section>
+        </section>
+        <section class="section-display">
+          <section class="inform-contenedor">
+            <section class="especial">
+              <section class="contenedor animate__animated">
+                <h2 class="titulo-section">Facturación</h2>
+                <img
+                  class="imagen"
+                  src="Assets/IMG/Banner-instrucciones/facturacion.png"
+                  alt="facturacion.png"
+                />
+              </section>
+            </section>
+          </section>
+        </section>
+        <section class="section-display">
+          <section class="inform-contenedor">
+            <section class="especial">
+              <section class="contenedor animate__animated">
+                <h2 class="titulo-section">Factura</h2>
+                <img
+                  class="imagen"
+                  src="Assets/IMG/Banner-instrucciones/factura.png"
+                  alt="factura.png"
+                />
+              </section>
+            </section>
+          </section>
+        </section>
+      </article>
+    </section>
+  </section>
+  <footer class="footer">
+    <section class="section-footer">
+      <h1 class="titulo">Instrucciones Sistema de Facturación / 2024</h1>
+      <i>Aqui Van Iconos</i>
+    </section>
+  </footer>
 </Layout>
 <script type="text/javascript" src="Assets/JS/script-facturacion.js"></script>

@@ -1,7 +1,8 @@
 /* Fuentes */
 @font-face {
   font-family: "Proxima Nova", "IBM Plex Sans";
-  src: url("../Fonts/IBMPlexSans-Regular.ttf") format("truetydpe"),
+  src:
+    url("../Fonts/IBMPlexSans-Regular.ttf") format("truetydpe"),
     url("../Fonts/Proxima Nova.otf") format("opentype");
 }
 
@@ -20,7 +21,11 @@ body {
     center fixed;
   background-size: cover;
   backdrop-filter: blur(2px);
-  font-family: Proxima Nova, IBM Plex Sans, arial, sans-serif;
+  font-family:
+    Proxima Nova,
+    IBM Plex Sans,
+    arial,
+    sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -116,7 +121,9 @@ body {
   top: -30px;
   left: 10px;
   transform: translateY(60px);
-  transition: transform 0.5s, color 0.5s;
+  transition:
+    transform 0.5s,
+    color 0.5s;
   pointer-events: none;
 }
 
@@ -173,15 +180,14 @@ body {
 }
 
 .container-mensajes_erroneo {
-    position: absolute;
-    width: 99%;
-    height: 15%;
-    color: #f00000;
-    font-weight: 900;
-    top: 37%;
-    left: 40%;
+  position: absolute;
+  width: 99%;
+  height: 15%;
+  color: #f00000;
+  font-weight: 900;
+  top: 37%;
+  left: 40%;
 }
-
 
 .entrada_formulario:focus + .etiqueta_entrada,
 .entrada_formulario:not(:placeholder-shown) + .etiqueta_entrada {
@@ -234,18 +240,18 @@ body {
 }
 
 .link_iniciodesesion {
-    position: relative;
-    width: 43%;
-    height: 7%;
+  position: relative;
+  width: 43%;
+  height: 7%;
 }
 
 .link_directo {
-    position: absolute;
-    cursor: pointer;
-    color: #0f0f0f;
-    text-decoration: none;
-    bottom: -1px;
-    font-weight: 900;
+  position: absolute;
+  cursor: pointer;
+  color: #0f0f0f;
+  text-decoration: none;
+  bottom: -1px;
+  font-weight: 900;
 }
 
 .link_directo:hover {

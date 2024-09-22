@@ -1,6 +1,7 @@
 @font-face {
   font-family: "Proxima Nova", "IBM Plex Sans";
-  src: url("../Fonts/IBMPlexSans-Regular.ttf") format("truetydpe"),
+  src:
+    url("../Fonts/IBMPlexSans-Regular.ttf") format("truetydpe"),
     url("../Fonts/Proxima Nova.otf") format("opentype");
 }
 
@@ -25,19 +26,22 @@
   border-radius: 20px;
   box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
   outline: 4px solid #000000;
-  transition: background-color 0.3s ease-in-out,
+  transition:
+    background-color 0.3s ease-in-out,
     color 400ms cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 
 .btnSalir {
-    position: absolute;
-    inset: 14% 0 0 83%;
+  position: absolute;
+  inset: 14% 0 0 83%;
 }
 
-.btnSalir:hover, .btnStyle:hover {
+.btnSalir:hover,
+.btnStyle:hover {
   background: #000000;
   color: #ffffff;
-  transition: background-color 0.3s ease-in-out,
+  transition:
+    background-color 0.3s ease-in-out,
     color 200ms cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 

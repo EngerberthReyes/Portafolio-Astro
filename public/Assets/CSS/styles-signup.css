@@ -1,7 +1,8 @@
 /* Fuentes */
 @font-face {
   font-family: "Proxima Nova", "IBM Plex Sans";
-  src: url("../Fonts/IBMPlexSans-Regular.ttf") format("truetydpe"),
+  src:
+    url("../Fonts/IBMPlexSans-Regular.ttf") format("truetydpe"),
     url("../Fonts/Proxima Nova.otf") format("opentype");
 }
 
@@ -20,7 +21,11 @@ body {
     center fixed;
   background-size: cover;
   backdrop-filter: blur(2px);
-  font-family: Proxima Nova, IBM Plex Sans, arial, sans-serif;
+  font-family:
+    Proxima Nova,
+    IBM Plex Sans,
+    arial,
+    sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -39,8 +44,8 @@ body {
 }
 
 .titulo {
-    width: 47%;
-    font-size: 30px;
+  width: 47%;
+  font-size: 30px;
 }
 
 .linea-oblicua {
@@ -117,7 +122,9 @@ body {
   top: -30px;
   left: 10px;
   transform: translateY(60px);
-  transition: transform 0.5s, color 0.5s;
+  transition:
+    transform 0.5s,
+    color 0.5s;
   pointer-events: none;
 }
 
@@ -186,23 +193,23 @@ body {
 }
 
 .container-mensajes_erroneo {
-    position: absolute;
-    width: 99%;
-    height: 15%;
-    color: #f00000;
-    font-weight: 900;
-    top: 34%;
-    left: 33%;
+  position: absolute;
+  width: 99%;
+  height: 15%;
+  color: #f00000;
+  font-weight: 900;
+  top: 34%;
+  left: 33%;
 }
 
 .container-mensajes_exitoso {
-    position: absolute;
-    width: 99%;
-    height: 15%;
-    color: #0000fa;
-    font-weight: 900;
-    top: 32%;
-    left: 42%;
+  position: absolute;
+  width: 99%;
+  height: 15%;
+  color: #0000fa;
+  font-weight: 900;
+  top: 32%;
+  left: 42%;
 }
 
 .container-error_contrasenia,
@@ -258,18 +265,18 @@ body {
 }
 
 .link_registro {
-    position: relative;
-    width: 35%;
-    height: 20px;
+  position: relative;
+  width: 35%;
+  height: 20px;
 }
 
 .link_directo {
-    position: absolute;
-    cursor: pointer;
-    color: #0f0f0f;
-    text-decoration: none;
-    bottom: -16px;
-    font-weight: 900;
+  position: absolute;
+  cursor: pointer;
+  color: #0f0f0f;
+  text-decoration: none;
+  bottom: -16px;
+  font-weight: 900;
 }
 
 .link_directo:hover {

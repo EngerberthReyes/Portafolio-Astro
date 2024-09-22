@@ -6,7 +6,7 @@ const flecha = document.getElementById("flecha");
 const linkRedireccionar = document.querySelectorAll(".link_redireccionamiento");
 const articuloPrincipal = document.querySelectorAll(".articulo-principal");
 const articuloPrincipalDos = document.querySelectorAll(
-  ".articulo-principal__informacion"
+  ".articulo-principal__informacion",
 );
 const header = document.querySelector(".header-container");
 const btnWhite = document.querySelector(".sol");
