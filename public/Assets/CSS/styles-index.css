@@ -78,7 +78,6 @@ body {
 
 .titulo-normal {
   text-align: center;
-  text-decoration: underline;
 }
 
 .header-section {
@@ -167,7 +166,7 @@ a:hover {
 
 .seccion-principal {
   width: 100%;
-  margin-top: 5rem;
+  margin-top: 3rem;
 }
 
 .seccion-secundaria {
@@ -175,7 +174,7 @@ a:hover {
   flex-wrap: wrap;
   justify-content: space-between;
   column-gap: 2%;
-  margin: 0 4.3% 4%;
+  margin: 0 4.3% 3%;
 }
 
 .articulo-principal {
@@ -388,7 +387,7 @@ article > .link_redireccionamiento {
 .articulo-hover:hover {
   z-index: 100;
   cursor: pointer;
-  transform: scale(1.1) rotate(5deg);
+  transform: scale(0.9);
   transition: transform 500ms 0.5ms cubic-bezier(0.22, 0.61, 0.36, 1);
 }
 
@@ -418,8 +417,12 @@ article > .link_redireccionamiento {
   }
 
   .articulo-principal {
-    width: 100vw;
+    width: 94vw;
     padding: 2rem 0;
+  }
+
+  .texto-articulo {
+    padding: 1rem;
   }
 
   .imagen {
@@ -429,6 +432,7 @@ article > .link_redireccionamiento {
   .articulo-especial {
     row-gap: 4rem;
     flex-wrap: wrap;
+    flex-direction: column;
   }
 
   .titulo-normal {
@@ -439,6 +443,9 @@ article > .link_redireccionamiento {
   .seccion-secundaria {
     display: flex;
     row-gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    margin: 0 -1rem;
   }
 
   article > .link_redireccionamiento {
