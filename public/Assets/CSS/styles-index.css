@@ -4,6 +4,9 @@
 }
 
 :root {
+  width: 100%;
+  scroll-behavior: smooth;
+  color-scheme: dark;
   --bordeLight: #000000;
   --fondoDark: #0f0f0f;
   --textoDark: #fdfdfd;
@@ -23,12 +26,6 @@ body.light-mode {
     background-color: #0f0f0f;
     color: #eeeeee;
   }
-}
-
-html {
-  width: 100%;
-  scroll-behavior: smooth;
-  color-scheme: dark;
 }
 
 body {
