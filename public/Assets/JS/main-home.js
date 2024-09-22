@@ -16,7 +16,7 @@ const imagenesArticulos = document.querySelectorAll(".imagen");
 // Inicializar en modo oscuro
 containerBtn.style.justifyContent = "flex-end";
 containerBtn.style.backgroundColor = "#000000";
-containerBtn.style.outline = "4px solid #ffffff";
+containerBtn.style.outline = "2px solid #ffffff";
 body.classList.add("dark-mode");
 header.classList.add("dark-mode");
 header.style.backgroundColor = "#0f0f0f";
@@ -41,7 +41,7 @@ imagenesArticulos.forEach((elemento) => {
 header.style.boxShadow = "rgba(255 255 255 / 46%) 0px 0px 13px 0px";
 
 linkRedireccionar.forEach((elemento) => {
-  elemento.style.outline = "4px solid #ffffff";
+  elemento.style.outline = "2px solid #ffffff";
   elemento.classList.add("dark-mode");
 });
 
@@ -86,7 +86,7 @@ containerBtn.addEventListener("click", () => {
   if (btnEstiloActual) {
     // Modo Claro
     containerBtn.style.backgroundColor = "#fdfdfd";
-    containerBtn.style.outline = "4px solid #000000";
+    containerBtn.style.outline = "2px solid #000000";
     body.classList.remove("dark-mode");
     body.classList.add("light-mode");
     header.classList.remove("dark-mode");
@@ -116,7 +116,7 @@ containerBtn.addEventListener("click", () => {
     header.style.boxShadow = "0 0 10px rgba(0, 0, 0, 0.2)";
 
     linkRedireccionar.forEach((elemento) => {
-      elemento.style.outline = "4px solid #000000";
+      elemento.style.outline = "2px solid #000000";
       elemento.classList.remove("dark-mode");
       elemento.classList.add("light-mode");
     });
@@ -125,7 +125,7 @@ containerBtn.addEventListener("click", () => {
   } else {
     // Modo Oscuro
     containerBtn.style.backgroundColor = "#000000";
-    containerBtn.style.outline = "4px solid #ffffff";
+    containerBtn.style.outline = "2px solid #ffffff";
     body.classList.add("dark-mode");
     body.classList.remove("light-mode");
     header.classList.add("dark-mode");
@@ -153,7 +153,7 @@ containerBtn.addEventListener("click", () => {
     header.style.boxShadow = "rgba(255,255,255,/46%) 0px 0px 13px";
 
     linkRedireccionar.forEach((elemento) => {
-      elemento.style.outline = "4px solid #ffffff";
+      elemento.style.outline = "2px solid #ffffff";
       elemento.classList.add("dark-mode");
       elemento.classList.remove("light-mode");
     });
