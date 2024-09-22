@@ -341,8 +341,16 @@ a:hover {
   align-items: center;
   margin-top: 1rem;
   width: 100%;
-  box-shadow: #c32525d9 0px 0px 13px 0px;
-  background: #df4d4d;
+  box-shadow: #eeeeee 0px 0px 13px 0px;
+  background-color: #0f0f0f;
+  transition: background-color 500ms ease;
+}
+
+body.light-mode {
+  .pie-pagina {
+    box-shadow: #0f0f0f 0px 0px 13px 0px;
+    background-color: #eeeeee;
+  }
 }
 
 .texto-pie-pagina {
