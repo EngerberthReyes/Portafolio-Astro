@@ -2,6 +2,7 @@
 
 const containerBtn = document.querySelector(".container-switch");
 const body = document.body;
+const html = document.documentElement;
 const flecha = document.getElementById("flecha");
 const flechaImagen = document.querySelector(".flechaUp-svg");
 const linkRedireccionar = document.querySelectorAll(".link_redireccionamiento");
@@ -55,6 +56,7 @@ const transicionOscuro = () => {
   flechaImagen.style.width = "25px";
   flecha.style.backgroundColor = "#0f0f0f";
   flecha.style.outlineColor = "#eeeeee";
+  html.style.colorScheme = "dark";
 };
 
 const transicionClaro = () => {
@@ -65,6 +67,7 @@ const transicionClaro = () => {
   flechaImagen.src = "/Assets/IMG/Banner/arrowleft.svg";
   flecha.style.backgroundColor = "#eeeeee";
   flecha.style.outlineColor = "#0f0f0f";
+  html.style.colorScheme = "light";
 };
 
 transicionOscuro();
