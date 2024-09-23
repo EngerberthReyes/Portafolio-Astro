@@ -3,6 +3,7 @@
 const containerBtn = document.querySelector(".container-switch");
 const body = document.body;
 const flecha = document.getElementById("flecha");
+const flechaImagen = document.querySelector(".flechaUp-svg");
 const linkRedireccionar = document.querySelectorAll(".link_redireccionamiento");
 const articuloPrincipal = document.querySelectorAll(".articulo-principal");
 const articuloPrincipalDos = document.querySelectorAll(
@@ -50,6 +51,10 @@ const transicionOscuro = () => {
   btnWhite.style.transform = "translateX(24px)";
   btnBlack.style.opacity = "1";
   btnBlack.style.transform = "translateX(-75px)";
+  flechaImagen.src = "/Assets/IMG/Banner/arrowleftWhite.svg";
+  flechaImagen.style.width = "25px";
+  flecha.style.backgroundColor = "#0f0f0f";
+  flecha.style.outlineColor = "#eeeeee";
 };
 
 const transicionClaro = () => {
@@ -57,6 +62,9 @@ const transicionClaro = () => {
   btnWhite.style.transform = "translateX(22px)";
   btnBlack.style.opacity = "0";
   btnBlack.style.transform = "translateX(24px)";
+  flechaImagen.src = "/Assets/IMG/Banner/arrowleft.svg";
+  flecha.style.backgroundColor = "#eeeeee";
+  flecha.style.outlineColor = "#0f0f0f";
 };
 
 transicionOscuro();
