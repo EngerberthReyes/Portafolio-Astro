@@ -182,7 +182,7 @@ code {
 .dropdown__arrow {
   margin-left: auto;
   transform: var(--rotate, 0);
-  transition: 0.7ms transform;
+  transition: transform 500ms ease;
 }
 
 .arrow_special {
@@ -233,7 +233,7 @@ code {
 
 .dropdown__list:has(:checked) {
   --rows: 1fr;
-  --rotate: rotate(180deg);
+  --rotate: rotate(-180deg);
   --bg: #28303b;
 }
 
@@ -254,12 +254,14 @@ code {
   color: #87ceeb;
 }
 
-.texto::before {
-  content: url(./assets/down.svg);
+.texto:before {
+  content: url(./Assets/down.svg);
   transform: rotate(90deg);
   display: inline-block;
   margin-right: 1rem;
-  transition: transform 4s ease;
+  position: relative;
+  top: 0.2rem;
+  transition: transform 500ms ease;
 }
 .seccion-centrar {
   display: flex;
@@ -369,7 +371,7 @@ code {
     flex-wrap: wrap;
   }
 
-  .texto::before {
+  .texto:before {
     transform: rotate(180deg);
   }
 }
