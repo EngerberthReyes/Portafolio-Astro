@@ -193,7 +193,9 @@ a:hover {
 
 .contenedor-imagen,
 .contenedor-imagen-dos,
-.contenedor-imagen-tres {
+.contenedor-imagen-tres,
+.contenedor-imagen-cuatro,
+.contenedor-imagen-cinco {
   background: url(../IMG/Banner-instrucciones/facturacion.png) center center
     fixed;
   width: 35rem;
@@ -214,9 +216,21 @@ a:hover {
   background-size: cover;
 }
 
+.contenedor-imagen-cinco {
+  background: url(../IMG/Home/CMS.png) center center fixed;
+  background-size: cover;
+}
+
+.contenedor-imagen-cuatro {
+  background: url(../IMG/Home/CMS.png) center center fixed;
+  background-size: cover;
+}
+
 .contenedor-imagen:hover:after,
 .contenedor-imagen-dos:hover:after,
-.contenedor-imagen-tres:hover:after {
+.contenedor-imagen-tres:hover:after,
+.contenedor-imagen-cuatro:hover:after,
+.contenedor-imagen-cinco:hover:after {
   content: "Sistema de Facturación";
   position: absolute;
   display: flex;
@@ -231,6 +245,14 @@ a:hover {
   font-size: 30px;
   font-weight: 700;
   border-radius: 20px;
+}
+
+.contenedor-imagen-cuatro:hover:after {
+  content: "Contratos y Demandas a Empresas de Servicios";
+}
+
+.contenedor-imagen-cinco:hover:after {
+  content: "Biblioteca Virtual";
 }
 
 .contenedor-imagen-dos:hover:after {
