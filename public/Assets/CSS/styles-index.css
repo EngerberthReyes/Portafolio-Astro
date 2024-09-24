@@ -329,6 +329,17 @@ a:hover {
     transform 500ms 500ms ease-in-out;
 }
 
+.articulo-flex {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+
+.link_perfiles {
+  width: 5rem !important;
+  flex: 1;
+}
+
 .flechaUp-svg {
   width: 25px;
   display: flex;
